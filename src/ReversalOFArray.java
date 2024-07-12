@@ -1,0 +1,22 @@
+public class ReversalOFArray {
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4, 5, 6};
+        int n = arr.length;
+        int p = 0;
+        int q = n - 1;
+
+        while (p < q) {
+            int temp = arr[p];
+            arr[p] = arr[q];
+            arr[q] = temp;
+            p++;
+            q--;
+
+
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+    }
+
+}
